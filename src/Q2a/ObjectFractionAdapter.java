@@ -11,37 +11,31 @@ package Q2a;
  * @author a1
  */
 public class ObjectFractionAdapter implements Fraction{
-    LongFraction lf ;
+    private LongFraction longf ;
     
     public ObjectFractionAdapter(LongFraction lf){
-        this.lf = lf;
+        this.longf = lf;
     }
     
     public int getNumerator(){
-        return (int) lf.numerator_;
+        return (int) longf.numerator();
     }
     
     public int getDenominator(){
-        return 0;
+        return (int) longf.denominator();
     }
     
     public Fraction add(Fraction b){
-        
-        Fraction result = null;
-        
-        LongFraction lfc = new LongFraction(b.getNumerator(),b.getDenominator());
-        LongFraction lfc2 = lf.plus(lfc);
-        result = new ObjectFractionAdapter(lfc2);
+        Fraction result;
+        LongFraction lfc = longf.plus(new LongFraction(b.getNumerator(),b.getDenominator()));
+        result = new ObjectFractionAdapter(lfc);
         
         return result;
     }
     
     public Fraction add(int b){
-        
-            Fraction result = null; 
-            LongFraction x = null;
-            
-            LongFraction lf2 = lf.plus(b);
+            Fraction result; 
+            LongFraction lf2 = longf.plus(b);
             result = new ObjectFractionAdapter(lf2);
             return result;
         }
@@ -52,7 +46,7 @@ public class ObjectFractionAdapter implements Fraction{
         Fraction result = null;
         
         LongFraction lfc = new LongFraction(b.getNumerator(),b.getDenominator());
-        LongFraction lfc2 = lf.minus(lfc);
+        LongFraction lfc2 = longf.minus(lfc);
         result = new ObjectFractionAdapter(lfc2);
         
         return result;
@@ -61,12 +55,12 @@ public class ObjectFractionAdapter implements Fraction{
 	public Fraction subtract(int b){
             Fraction result = null; 
             
-            LongFraction lf2 = lf.minus(b);
+            LongFraction lf2 = longf.minus(b);
             result = new ObjectFractionAdapter(lf2);
             return result;
         }
         
         public String toString(){
-            return null;
+            return longf.toString();
         }
 }

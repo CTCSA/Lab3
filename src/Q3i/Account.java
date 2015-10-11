@@ -12,5 +12,5 @@ package Q3i;
  */
 public interface Account {
        
-    private accountNumber();
+
 }
