@@ -10,6 +10,6 @@ package Q2b;
  *
  * @author a1
  */
-public class ClassFractionAdapter {
+public class ClassFractionAdapter  {
     
 }
