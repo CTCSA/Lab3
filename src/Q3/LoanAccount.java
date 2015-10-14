@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 
-package Q3i;
+package Q3;
 
 /**
  *
  * @author a1
  */
-public class Customer {
+public class LoanAccount {
     
 }

@@ -4,16 +4,25 @@
  * and open the template in the editor.
  */
 
-package Q3ii;
-
+package Q3;
+import java.util.*;
 /**
  *
  * @author a1
  */
 public class Client {
+    
     private String name;
     private String address;
-    
+    private Vector<InternationalAccount> accountsAdapter = new Vector<InternationalAccount>();
+
+    public Vector<InternationalAccount> getAccountsAdapter() {
+        return accountsAdapter;
+    }
+
+    public void setAccountsAdapter(Vector<InternationalAccount> accountsAdapter) {
+        this.accountsAdapter = accountsAdapter;
+    }
     public String getName(){
         return name;
     }

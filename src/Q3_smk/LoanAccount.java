@@ -4,12 +4,16 @@
  * and open the template in the editor.
  */
 
-package Q3ii;
+package Q3_smk;
 
 /**
  *
  * @author a1
  */
-public class ForeignExchangeCaculator {
+public class LoanAccount extends Account {
+    public LoanAccount(){
+        
+    }
+
     
 }

@@ -4,18 +4,14 @@
  * and open the template in the editor.
  */
 
-package Q3ii;
+package Q3;
 
 /**
  *
  * @author a1
  */
-public class InternationalAccount {
-    private String accountnumber;
-    private Double balance;
-    private String currency;
-    
-    public void increase(Double amount){
-         
+public class ForeignExchangeCaculator {
+    public double HKD2USD(double amount){
+        return amount / 7.78;
     }
 }

@@ -4,13 +4,12 @@
  * and open the template in the editor.
  */
 
-package Q3i;
+package Q3_smk;
 
 /**
  *
  * @author a1
  */
-public interface Account {
-       
-
+public class SavingAccount extends Account {
+    
 }
